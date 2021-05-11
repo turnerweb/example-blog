@@ -46,4 +46,30 @@
         }
     }
 
+    @include tablet {
+        width: auto;
+        height: auto;
+        position: static;
+        transition: none;
+        background-color: transparent;
+        flex-direction: row;
+
+        &__link {
+            align-self: unset;
+            font-size: $font-norm;
+            color: $font-color;
+            padding: 0 20px 0 0;
+            transition: none;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        &__open,
+        &__close {
+            display: none;
+        }
+    }
+
 }
