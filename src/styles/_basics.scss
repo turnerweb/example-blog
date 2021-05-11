@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: $font-base;
+    position: relative;
+}
+
+main {
+    margin-top: 65px;
+    padding-top: 200px;
+}
