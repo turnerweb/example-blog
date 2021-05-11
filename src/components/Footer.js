@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer>
-            Footer
+        <footer className="footer">
+            <p className="footer__text">
+                {new Date().getFullYear()} stefanturner.site
+            </p>
         </footer>
     )
 }
