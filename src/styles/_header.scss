@@ -3,6 +3,8 @@
     height: 65px;
     position: fixed;
     top: 0;
+    background-color: $white;
+    z-index: 5;
 
     &__colorbar {
         margin-bottom: 30px;
