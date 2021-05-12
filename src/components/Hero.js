@@ -19,8 +19,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
             }
         `)
 
-        console.log(data)
-
         return (
             <section className="hero">
                 <div className="hero__content">
