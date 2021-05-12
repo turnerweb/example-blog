@@ -5,8 +5,7 @@ slug: a-walk-to-belem
 date: 2020-07-04T00:00:00+00:00
 dateprint: 4. Juli 2020
 author: Stefan
-thumb: ../images/tram.png
-featuredImg: ../images/tram.png
+thumb: ../images/belem.png
 ---
 
 # Belem

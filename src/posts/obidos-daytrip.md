@@ -5,8 +5,7 @@ slug: obidos-daytrip
 date: 2020-03-21T00:00:00+00:00
 dateprint: 21. März 2021
 author: Stefan
-thumb: ../images/tram.png
-featuredImg: ../images/tram.png
+thumb: ../images/obidos.png
 ---
 
 # Obidos Daytrip
