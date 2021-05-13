@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
+import hamburger from '../images/icons/hamburger.svg'
+import close from '../images/icons/close.svg'
+
 export default function Header() {
 
     const [isOpen, setOpen] = useState(false);
@@ -19,12 +22,12 @@ export default function Header() {
                     </h1>
                 </Link>
                 <button className="navigation__open" onClick={handleClick}>
-                    <img src="/hamburger.svg" className="navigation__hamburger"  alt="" />    
+                    <img src={hamburger} className="navigation__hamburger"  alt="" />    
                 </button>
                 
                 <nav className={`navigation ${isOpen ? "navigation--open" : ""}`}>
                     <button className="navigation__close">
-                        <img src="/close.svg" className="navigation__x" onClick={handleClick} alt="" />
+                        <img src={close} className="navigation__x" onClick={handleClick} alt="" />
                     </button>
                     <Link className="navigation__link" to="/">Home</Link>
                     <Link className="navigation__link" to="/places">Sehenswürdigkeiten</Link>
