@@ -1,10 +1,7 @@
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
-
-import Facebook from '../images/icons/facebook.svg'
-import Insta from '../images/icons/instagram.svg'
-import Pinterest from '../images/icons/pinterest.svg'
+import Share from '../components/Share'
 
 export default function Posts() {
 
@@ -55,11 +52,7 @@ export default function Posts() {
                 <Link to={"/posts/" + post.frontmatter.slug} className="postpre__link">Weiterlesen</Link>
                 <div className="postpre__footer">
                   <p className="postpre__by">Von <span className="postpre__orange">{post.frontmatter.author}</span> am {post.frontmatter.dateprint}</p>
-                  <div className="postpre__share">
-                    <Facebook className="postpre__icon"/>
-                    <Pinterest className="postpre__icon"/>
-                    <Insta className="postpre__icon"/>
-                  </div>
+                  <Share class="postpre" />
                 </div>                 
               </div>
             </div>

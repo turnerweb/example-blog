@@ -21,6 +21,10 @@
         width: 30px;
         background-color: transparent;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__close {

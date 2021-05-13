@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import hamburger from '../images/icons/hamburger.svg'
-import close from '../images/icons/close.svg'
+import Hamburger from '../images/icons/hamburger.svg'
+import Close from '../images/icons/close.svg'
 
 export default function Header() {
 
@@ -22,12 +22,12 @@ export default function Header() {
                     </h1>
                 </Link>
                 <button className="navigation__open" onClick={handleClick}>
-                    <img src={hamburger} className="navigation__hamburger"  alt="" />    
+                    <Hamburger className="navigation__hamburger" />   
                 </button>
                 
                 <nav className={`navigation ${isOpen ? "navigation--open" : ""}`}>
-                    <button className="navigation__close">
-                        <img src={close} className="navigation__x" onClick={handleClick} alt="" />
+                    <button className="navigation__close" onClick={handleClick}>
+                        <Close className="navigation__x" />
                     </button>
                     <Link className="navigation__link" to="/">Home</Link>
                     <Link className="navigation__link" to="/places">Sehenswürdigkeiten</Link>

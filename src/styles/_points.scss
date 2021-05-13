@@ -1,0 +1,105 @@
+.gatsby-image-wrapper {
+    display: block;
+}
+
+.poi {
+    padding: 100px 0;
+
+    &__content {
+        @include content;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-family: $roboto;
+        color: $blue;
+    }
+
+    &__grid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__overlay {
+        @include flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: normal;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(black, 0.8);
+
+        &:hover {
+            
+        }
+    }
+
+    &__text {
+        max-width: 350px;
+
+        h2 {
+            font-family: $roboto;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $blue;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 10px;
+            color: $white;
+        }
+    }
+
+    &__footer {
+        @include flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid $blue;
+    }
+
+    &__share {
+        @include flex;
+        align-self: flex-end;
+    }
+
+    &__icon {
+        margin: 0 5px;
+        width: 20px;
+        align-self: flex-end;
+        fill: $blue;
+    }
+
+    &__link {
+        padding: 0.5rem 2rem;
+        background-color: transparent;
+        border: 2px solid $blue;
+        color: $blue;
+
+    }
+
+    &__button {
+        margin: 60px auto 0 auto;
+        padding: 0.5rem 2rem;
+        display: block;
+        border: 1px solid $font-color;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+
+    @include tablet {
+        &__grid {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}

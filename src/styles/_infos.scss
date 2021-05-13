@@ -1,0 +1,49 @@
+.infos {
+
+    &__darkbg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($font-color, 0.8);
+        z-index: -10;
+    }
+
+    &__content {
+        @include content;
+        padding: 60px 0;
+    }
+
+    &__grid {
+        @include flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-family: $roboto;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__single {
+        padding: 1.8rem 2rem;
+        min-width: 200px;
+        align-self: flex-start;
+    }
+
+    &__fieldtitle {
+        font-size: 1rem;
+        font-family: $roboto;
+        color: $white;
+    }
+
+    &__fieldtext {
+        font-size: 1.4rem;
+        color: $green;
+    }
+}
