@@ -39,13 +39,13 @@ export default function Places() {
 
     return (
         <Layout>
-            <PageTitle title='Sehenswürdigkeiten' />
             <div className="allpoints">
+                <PageTitle title='Sehenswürdigkeiten' />
                 <div className="allpoints__grid">
                     {points.map(point => (
                         <PoiCard content={point} />
                     ))}
-                </div>
+                </div>              
             </div>
         </Layout>
     )
