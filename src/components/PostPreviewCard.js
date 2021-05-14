@@ -5,11 +5,12 @@ import Share from '../components/Share'
 
 export default function PostPreviewCard(props) {
 
+    const classname = props.classname
     const post = props.content
     const frontmatter = post.childMarkdownRemark.frontmatter
 
     return (
-      <div className="postpre" key={post.id}>
+      <div className={"postpre" + ' ' + classname} key={post.id}>
         <GatsbyImage image={frontmatter.thumb.childImageSharp.gatsbyImageData} className="postpre__img" alt="" loading="eager" />
         <div className="postpre__content">
           <p className="postpre__tags">{frontmatter.tags}</p>  

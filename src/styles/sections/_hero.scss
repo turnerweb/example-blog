@@ -2,6 +2,7 @@
 
     &__content {
         @include content;
+        padding-bottom: 40px;
     }
 
     &__title {

@@ -48,7 +48,7 @@ export default function PostsPreview() {
         <h2 className="posts__title">Letzte Blog Artikel</h2>
         <div className="posts__container">
           {posts.map(post => (
-            <PostPreviewCard content={post.node} />
+            <PostPreviewCard content={post.node} classname="posts__card" />
           ))}          
         </div>
         <button className="posts__button">Weitere Artikel</button>
