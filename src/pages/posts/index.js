@@ -51,7 +51,7 @@ export default function Posts() {
             <div className="allposts__container">
               <div className="allposts__content">
                 {allPosts.map(singlePost => (
-                  <PostPreviewCard content={singlePost.node} className="allposts__card" />
+                  <PostPreviewCard content={singlePost.node} classname="allposts__card" />
                 ))}
               </div>
             </div>
