@@ -17,7 +17,6 @@
         @include content;
         @include flex;
         justify-content: space-between;
-        margin-top: 20px;
     }
 
     &__logo {
@@ -29,5 +28,11 @@
     &__upper {
         text-transform: uppercase;
         font-weight: 700;
+    }
+
+    @include tablet {
+        &__content {
+            margin-top: 20px;
+        }
     }
 }

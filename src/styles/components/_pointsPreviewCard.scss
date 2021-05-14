@@ -19,7 +19,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: normal;
-        padding: 2rem;
+        padding: 1rem;
         position: absolute;
         top: 110%;
         bottom: 0;
@@ -34,13 +34,14 @@
 
         h2 {
             font-family: $roboto;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 400;
             color: $blue;
             text-transform: uppercase;
         }
 
         p {
+            font-size: $font-xs;
             margin-top: 10px;
             color: $white;
         }
@@ -63,6 +64,12 @@
         width: 20px;
         align-self: flex-end;
         fill: $blue;
+        transition: fill .2s;
+
+        &:hover {
+            cursor: pointer;
+            fill: $white;
+        }
     }
 
     &__link {
@@ -70,6 +77,26 @@
         background-color: transparent;
         border: 2px solid $blue;
         color: $blue;
+        transition: all .2s;
 
+        &:hover {
+            background-color: $white;
+        }
+    }
+
+    @include desktop {
+        &__overlay {
+            padding: 2rem;
+        }
+
+        &__text {
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: unset;
+            }
+        }
     }
 }
