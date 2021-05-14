@@ -2,7 +2,8 @@
     @include content;
 
     &__grid {
-        margin-top: -300px;
+        margin-top: -30%;
+        padding-bottom: 50px;
         display: grid;
         grid-template-columns: auto;
         gap: 20px;
