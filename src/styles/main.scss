@@ -1,15 +1,27 @@
-@import 'variables';
-@import 'mixins';
+/* global */
 
-@import 'basics';
+@import './global/variables';
+@import './global/mixins';
+@import './global/basics';
 
-@import 'header';
-@import 'navigation';
-@import 'footer';
 
-@import 'hero';
-@import 'posts';
-@import 'infos';
-@import 'points';
+/* pages */
 
-@import 'allpostspage';
+@import './pages/allpostspage';
+
+
+/* sections */
+
+@import './sections/header';
+@import './sections/footer';
+@import './sections/hero';
+@import './sections/postsPreview';
+@import './sections/infos';
+@import './sections/pointsPreview';
+
+
+/* components */
+
+@import './components/navigation';
+@import './components/postPreviewCard';
+@import './components/pointsPreviewCard';

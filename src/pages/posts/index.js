@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../../components/Layout';
 import PostPreviewCard from '../../components/PostPreviewCard'
-import PageTitle from '../../components/Page-title'
+import PageTitle from '../../components/PageTitle'
 
 export default function Posts() {
 

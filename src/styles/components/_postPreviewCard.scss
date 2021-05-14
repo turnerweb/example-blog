@@ -1,44 +1,4 @@
-.posts {
-    padding: 100px 0;
-    background-color: $bg-light;
-
-    &__title {
-        font-size: 2rem;
-        font-family: $roboto;
-        color: $primary;
-    }
-
-    &__content {
-        @include content;
-    }
-
-    &__container {
-        @include flex;
-        flex-direction: column;
-        margin-top: 30px;
-    }
-
-    &__button {
-        margin: 60px auto 0 auto;
-        padding: 0.5rem 2rem;
-        display: block;
-        border: 1px solid $font-color;
-        text-transform: uppercase;
-    }
-
-    @include desktop {
-        &__container {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-}
-
 .postpre {
-    &:not(:first-child) {
-        margin-top: 70px;
-    }
-    max-width: 500px;
     background-color: $white;
 
     &__content {

@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Posts from '../components/PostsPreview'
-import Infos from '../components/Infos'
-import Points from '../components/Points-of-interesst'
+import Hero from '../components/sections/Hero'
+import PostsPreview from '../components/sections/PostsPreview'
+import Infos from '../components/sections/Infos'
+import PoiPreview from '../components/sections/PoiPreview'
 
 
 export default function Home() {
@@ -11,9 +11,9 @@ export default function Home() {
   return (
       <Layout>
         <Hero />
-        <Posts />
+        <PostsPreview />
         <Infos />
-        <Points />
+        <PoiPreview />
       </Layout>
     )
 }

@@ -1,0 +1,37 @@
+.poi {
+    padding: 100px 0;
+
+    &__content {
+        @include content;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-family: $roboto;
+        color: $blue;
+    }
+
+    &__grid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+
+
+    &__button {
+        margin: 60px auto 0 auto;
+        padding: 0.5rem 2rem;
+        display: block;
+        border: 1px solid $font-color;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+
+    @include tablet {
+        &__grid {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}

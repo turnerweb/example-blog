@@ -1,8 +1,8 @@
 import { useStaticQuery, graphql } from 'gatsby'
 import React from 'react'
-import PostPreviewCard from '../components/PostPreviewCard'
+import PostPreviewCard from '../PostPreviewCard'
 
-export default function Posts() {
+export default function PostsPreview() {
 
     const data = useStaticQuery(graphql`
     query Posts {

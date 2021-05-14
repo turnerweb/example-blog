@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import Hamburger from '../images/icons/hamburger.svg'
-import Close from '../images/icons/close.svg'
+import Hamburger from '../../images/icons/hamburger.svg'
+import Close from '../../images/icons/close.svg'
 
 export default function Header() {
 
