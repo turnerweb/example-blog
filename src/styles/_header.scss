@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     background-color: $white;
-    z-index: 5;
+    z-index: 9;
 
     &__colorbar {
         width: 100%;
@@ -17,6 +17,7 @@
         @include content;
         @include flex;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     &__logo {

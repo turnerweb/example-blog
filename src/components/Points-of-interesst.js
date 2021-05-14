@@ -37,8 +37,6 @@ export default function Points() {
 
     const points = data.allFile.edges
 
-    console.log(points)
-
     return (
         <section className="poi">
             <div className="poi__content">

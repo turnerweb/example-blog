@@ -22,3 +22,22 @@ button {
     font-size: 1rem;
     font-family: $roboto;
 }
+
+.pagetitle {
+    @include flex;
+    flex-direction: column;
+
+    &__title {
+        margin-top: 100px;
+        font-size: 3rem;
+        font-family: $roboto;
+        text-transform: uppercase;
+        z-index: 5;
+    }
+
+    &__img {
+        margin-top: -100px;
+        opacity: .5;
+        z-index: 0;
+    }
+}

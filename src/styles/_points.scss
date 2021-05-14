@@ -24,6 +24,13 @@
 
     &__img {
         position: relative;
+        overflow: hidden;
+
+        &:hover {
+            & > .poi__overlay {
+                top: 0;
+            }
+        }
     }
 
     &__overlay {
@@ -33,15 +40,12 @@
         align-items: normal;
         padding: 2rem;
         position: absolute;
-        top: 0;
+        top: 110%;
         bottom: 0;
         left: 0;
         right: 0;
         background-color: rgba(black, 0.8);
-
-        &:hover {
-            
-        }
+        transition: top .6s;
     }
 
     &__text {

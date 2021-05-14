@@ -1,0 +1,21 @@
+.allposts {
+
+    &__container {
+        margin-top: -250px;
+        background-color: $bg-light;
+        padding: 100px 0;
+        position: relative;
+    }
+
+    &__content {
+        @include content;
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        margin-top: 50px;
+    }
+
+}

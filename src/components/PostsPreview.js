@@ -1,39 +1,46 @@
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { useStaticQuery, graphql } from 'gatsby'
 import React from 'react'
-import Share from '../components/Share'
+import PostPreviewCard from '../components/PostPreviewCard'
 
 export default function Posts() {
 
     const data = useStaticQuery(graphql`
-      query Posts {
-        allMarkdownRemark(sort: {fields: frontmatter___date}, limit: 3) {
-          nodes {
-            frontmatter {
-              slug
-              tags
-              title
-              author
-              dateprint
-              thumb {
-                childImageSharp {
-                  gatsbyImageData(
-                    formats: [AUTO, WEBP]
-                    layout: CONSTRAINED
-                    width: 500
-                    placeholder: BLURRED
-                  )
+    query Posts {
+      allFile(
+        filter: {sourceInstanceName: {eq: "posts"}}
+        limit: 3
+        sort: {fields: childMarkdownRemark___frontmatter___date}
+      ) {
+        edges {
+          node {
+            id
+            childMarkdownRemark {
+              frontmatter {
+                slug
+                tags
+                title
+                author
+                dateprint
+                thumb {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 500
+                      placeholder: BLURRED
+                      layout: CONSTRAINED
+                      formats: AUTO
+                    )
+                  }
                 }
               }
+              excerpt(pruneLength: 200)
             }
-            id
-            excerpt(pruneLength: 200)
           }
         }
       }
+    }
     `)
 
-    const posts = data.allMarkdownRemark.nodes
+    const posts = data.allFile.edges
   
     return (
       <section className="posts">
@@ -41,21 +48,7 @@ export default function Posts() {
         <h2 className="posts__title">Letzte Blog Artikel</h2>
         <div className="posts__container">
           {posts.map(post => (
-            <div className="postpre" key={post.id}>
-              <GatsbyImage image={post.frontmatter.thumb.childImageSharp.gatsbyImageData} className="postpre__img" alt="" loading="eager" />
-              <div className="postpre__content">
-                <p className="postpre__tags">{post.frontmatter.tags}</p>  
-                <h2 className="postpre__title">{post.frontmatter.title}</h2>
-                <p className="postpre__text">
-                  {post.excerpt}
-                </p>
-                <Link to={"/posts/" + post.frontmatter.slug} className="postpre__link">Weiterlesen</Link>
-                <div className="postpre__footer">
-                  <p className="postpre__by">Von <span className="postpre__orange">{post.frontmatter.author}</span> am {post.frontmatter.dateprint}</p>
-                  <Share class="postpre" />
-                </div>                 
-              </div>
-            </div>
+            <PostPreviewCard content={post.node} />
           ))}          
         </div>
         <button className="posts__button">Weitere Artikel</button>
