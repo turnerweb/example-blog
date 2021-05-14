@@ -1,0 +1,47 @@
+.about {
+    @include content;
+
+    &__img {
+        margin: -35% auto 0 auto;
+        width: 80%;
+        max-width: 1000px;
+    }
+
+    &__textcontainer {
+        @include flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    &__intro {
+        font-size: 1.1rem;
+        max-width: 550px;
+    }
+
+    &__paras {
+        margin-top: 40px;
+        max-width: 550px;
+
+        p {
+            margin-bottom: 20px;    
+        }
+        
+    }
+
+    @include tablet {
+        &__textcontainer {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__intro {
+            width: 47%;
+            align-self: flex-start;
+        }
+
+        &__paras {
+            margin-top: 0;
+            width: 47%;
+        }
+    }
+}
