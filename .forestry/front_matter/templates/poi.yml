@@ -1,0 +1,13 @@
+---
+label: poi
+hide_body: false
+fields:
+- type: textarea
+  name: link
+  label: link
+- type: file
+  name: thumb
+  label: thumb
+- type: text
+  name: tag
+  label: tag
