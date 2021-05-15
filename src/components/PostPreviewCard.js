@@ -1,5 +1,5 @@
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Share from '../components/Share'
 
@@ -10,8 +10,8 @@ export default function PostPreviewCard(props) {
     const frontmatter = post.childMarkdownRemark.frontmatter
 
     return (
-      <div className={"postpre" + ' ' + classname} key={post.id}>
-        <GatsbyImage image={frontmatter.thumb.childImageSharp.gatsbyImageData} className="postpre__img" alt="" loading="eager" />
+      <div className={`postpre ${classname}`}>
+        <GatsbyImage image={getImage(frontmatter.thumb.childImageSharp.gatsbyImageData)} className="postpre__img" alt="" loading="eager" />
         <div className="postpre__content">
           <p className="postpre__tags">{frontmatter.tags}</p>  
           <h2 className="postpre__title">{frontmatter.title}</h2>

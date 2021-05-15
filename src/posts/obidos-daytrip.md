@@ -6,6 +6,7 @@ date: 2020-03-21T00:00:00+00:00
 dateprint: 21. März 2021
 author: Stefan
 thumb: ../images/obidos.png
+featuredImg: ../images/tram.png
 ---
 
 # Obidos Daytrip
