@@ -26,3 +26,5 @@ fields:
 - type: file
   name: featuredImg
   label: featuredImg
+pages:
+- src/posts/surfing-in-nazare.md
