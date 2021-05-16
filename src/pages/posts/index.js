@@ -8,40 +8,39 @@ export default function Posts() {
 
         const data = useStaticQuery(graphql`
         query AllPosts {
-          allFile(
-            filter: {sourceInstanceName: {eq: "posts"}}
-            sort: {fields: childMarkdownRemark___frontmatter___date}
+          allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/posts/"}}
+            sort: {fields: frontmatter___date, order: DESC}
           ) {
             edges {
               node {
                 id
-                childMarkdownRemark {
-                  frontmatter {
-                    slug
-                    tags
-                    title
-                    author
-                    dateprint
-                    thumb {
-                      childImageSharp {
-                        gatsbyImageData(
-                          width: 500
-                          placeholder: BLURRED
-                          layout: CONSTRAINED
-                          formats: AUTO
-                        )
-                      }
+                frontmatter {
+                  slug
+                  tags
+                  title
+                  author
+                  dateprint
+                  thumb {
+                    childImageSharp {
+                      gatsbyImageData(
+                        width: 500
+                        placeholder: BLURRED
+                        layout: CONSTRAINED
+                        formats: AUTO
+                      )
                     }
                   }
-                  excerpt(pruneLength: 200)
+                  date
                 }
+                excerpt(pruneLength: 200)
               }
             }
           }
         }
     `)
 
-    const allPosts = data.allFile.edges
+    const allPosts = data.allMarkdownRemark.edges
 
 
     return (
@@ -51,7 +50,7 @@ export default function Posts() {
             <div className="allposts__container">
               <div className="allposts__content">
                 {allPosts.map(singlePost => (
-                  <PostPreviewCard content={singlePost.node} classname="allposts__card" />
+                  <PostPreviewCard content={singlePost.node} classname="allposts__card" key={singlePost.node.id} />
                 ))}
               </div>
             </div>

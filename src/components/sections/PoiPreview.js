@@ -42,7 +42,7 @@ export default function PoiPreview() {
                 <h2 className="poi__title">Sehenswürdigkeiten</h2>
                 <div className="poi__grid">
                     {points.map(point => (
-                        <PoiCard content={point} />
+                        <PoiCard content={point} key={point.node.id} />
                     ))}
                 </div>
                 <button className="poi__button">Weitere Orte</button>

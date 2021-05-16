@@ -8,7 +8,7 @@ export default function PoiCard(props) {
     const point = props.content
 
     return (
-        <div className="poicard__single" key={point.node.id}>
+        <div className="poicard__single">
             <div className="poicard__img">
                 <GatsbyImage image={getImage(point.node.childMarkdownRemark.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt="" loading="eager" />
                 <div className="poicard__overlay">

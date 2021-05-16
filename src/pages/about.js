@@ -33,13 +33,11 @@ export default function About() {
 
     const about = data.file.childMarkdownRemark
 
-    console.log(about)
-
     return (
         <Layout>
             <div className="about">
                 <PageTitle title={about.frontmatter.title} className="about__title" />  
-                <GatsbyImage image={getImage(about.frontmatter.img.childImageSharp.gatsbyImageData)} className="about__img" />
+                <GatsbyImage image={getImage(about.frontmatter.img.childImageSharp.gatsbyImageData)} alt="" className="about__img" />
                 <div className="about__textcontainer">
                     <p className="about__intro">{about.frontmatter.intro}</p>
                     <div className="about__paras" dangerouslySetInnerHTML={{ __html: about.html }}></div>

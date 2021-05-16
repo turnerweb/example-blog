@@ -2,7 +2,7 @@
 title: Obidos daytrip
 tags: trip, obidos
 slug: obidos-daytrip
-date: 2020-03-21T00:00:00+00:00
+date: 2021-03-21T00:00:00+00:00
 dateprint: 21. März 2021
 author: Stefan
 thumb: ../images/obidos.png

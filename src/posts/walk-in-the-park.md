@@ -2,8 +2,8 @@
 title: Walk in the Park
 tags: walk, lisbon
 slug: walk-in-the-park
-date: 2020-11-28T00:00:00+00:00
-dateprint: 28. November 2020
+date: 2020-01-28T00:00:00+00:00
+dateprint: 28. Januar 2020
 author: Stefan
 thumb: ../images/tram.png
 featuredImg: ../images/tram.png

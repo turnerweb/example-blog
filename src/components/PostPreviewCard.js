@@ -7,7 +7,7 @@ export default function PostPreviewCard(props) {
 
     const classname = props.classname
     const post = props.content
-    const frontmatter = post.childMarkdownRemark.frontmatter
+    const frontmatter = post.frontmatter
 
     return (
       <div className={`postpre ${classname}`}>
@@ -16,7 +16,7 @@ export default function PostPreviewCard(props) {
           <p className="postpre__tags">{frontmatter.tags}</p>  
           <h2 className="postpre__title">{frontmatter.title}</h2>
           <p className="postpre__text">
-            {post.childMarkdownRemark.excerpt}
+            {post.excerpt}
           </p>
           <Link to={"/posts/" + frontmatter.slug} className="postpre__link">Weiterlesen</Link>
           <div className="postpre__footer">

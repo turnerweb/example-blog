@@ -43,7 +43,7 @@ export default function Places() {
                 <PageTitle title='Sehenswürdigkeiten' />
                 <div className="allpoints__grid">
                     {points.map(point => (
-                        <PoiCard content={point} />
+                        <PoiCard content={point} key={point.node.id} />
                     ))}
                 </div>              
             </div>
