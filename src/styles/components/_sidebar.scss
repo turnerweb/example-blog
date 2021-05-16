@@ -1,0 +1,9 @@
+.sidebar {
+    margin-top: 25px;
+    padding-left: 2rem;
+ 
+    
+    @include tablet {
+        width: 30%;
+    }
+}
