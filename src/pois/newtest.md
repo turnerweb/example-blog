@@ -1,6 +1,6 @@
 ---
 link: www.google.ch
-thumb: "/src/images/slide2.jpg"
+thumb: "../images/pois/slide2.jpg"
 tag: hello test
 
 ---

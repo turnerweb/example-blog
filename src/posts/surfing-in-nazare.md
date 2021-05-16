@@ -5,8 +5,8 @@ slug: surfing
 date: 2021-08-09T22:00:00Z
 dateprint: 8. Oktober 2021
 author: Stefan
-thumb: "/src/images/pois/salir.jpg"
-featuredImg: "/src/images/tram.jpg"
+thumb: "../images/pois/salir.jpg"
+featuredImg: "../images/tram.jpg"
 
 ---
 dlkjf hasdjkfhsadölfasdkl fjasioöf zpoias fhkjsd fn.skdmc nöoisxic uhf öoi dhf  hdjfhwerkj hsfkioösdfhdf ö ifhsdioäfsodaäifusdlfkjsd,fmnsd,fkiusdfisdfsdf lksdafkjls hdfjkash dfkjas hdflkajdsflkjd saskjfhkjsdhflkjas hdlkjsda flakjsdhaskjd haskjdf hs
