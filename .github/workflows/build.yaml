@@ -30,9 +30,9 @@ jobs:
         run: ls -la public
 
       - name: Deploy
-        with:
-          branch: deploy
-          folder: build
-        run: |
-          git commit -am "Build"
-          git push
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: deploy
+          FOLDER: public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
