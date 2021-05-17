@@ -28,4 +28,9 @@ jobs:
 
       - name: Verify build
         run: ls -la public
+
+      - name: Deploy
+        with:
+          branch: deploy
+          folder: build
         
