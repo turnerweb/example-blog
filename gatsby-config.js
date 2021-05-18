@@ -6,12 +6,20 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'Portugal Website',
+    description: 'Dummy Blog built with Gatsby',
+    robots: 'noindex',
+    lang: 'de'
+  },
+
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
