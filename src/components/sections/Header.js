@@ -31,7 +31,7 @@ export default function Header() {
                     </button>
                     <Link className="navigation__link" to="/">Home</Link>
                     <Link className="navigation__link" to="/places">Sehenswürdigkeiten</Link>
-                    <Link className="navigation__link" to="/about">Über mich</Link>
+                    <Link className="navigation__link" to="/about">Über</Link>
                     <Link className="navigation__link" to="/posts">Blog</Link>
                 </nav>                
             </div>

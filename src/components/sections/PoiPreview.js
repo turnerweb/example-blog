@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import React from 'react'
 import PoiCard from '../PoiCard'
 
@@ -45,7 +45,7 @@ export default function PoiPreview() {
                         <PoiCard content={point} key={point.node.id} />
                     ))}
                 </div>
-                <button className="poi__button">Weitere Orte</button>
+                <Link className="poi__button" to="/places">Weitere Orte</Link>
             </div>
         </section>
     )

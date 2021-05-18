@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import React from 'react'
 import PostPreviewCard from '../PostPreviewCard'
 
@@ -50,7 +50,7 @@ export default function PostsPreview() {
             <PostPreviewCard content={post.node} classname="posts__card" key={post.node.id} />
           ))}          
         </div>
-        <button className="posts__button">Weitere Artikel</button>
+        <Link className="posts__button" to="/posts">Weitere Artikel</Link>
       </div>
     </section>
     )
