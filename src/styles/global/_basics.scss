@@ -22,3 +22,16 @@ button {
     font-size: 1rem;
     font-family: $roboto;
 }
+
+.not-found {
+    @include content;
+    @include flex;
+    min-height: 100vh;
+
+    &__text {
+        font-size: 4rem;
+        font-family: $roboto;
+        color: $primary;
+        text-align: center;        
+    }
+}

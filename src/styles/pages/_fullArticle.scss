@@ -21,6 +21,12 @@
     &__icon {
         margin: 0 5px;
         width: 20px;
+        transition: fill .3s;
+
+        &:hover {
+            cursor: pointer;
+            fill: $primary;
+        }
     }
 
     &__published {
@@ -62,6 +68,19 @@
 
         p {
             margin-bottom: 50px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: $primary;
+                &:hover {
+                    color: $font-color;
+                }
+        }
+
+        li {
+            margin-left: 15px;
+            list-style-type: disc;
         }
     }
 
