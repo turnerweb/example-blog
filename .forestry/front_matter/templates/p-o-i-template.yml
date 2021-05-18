@@ -8,6 +8,7 @@ fields:
 - type: file
   name: thumb
   label: thumb
+  description: 'Image size: 1360px X 900px'
 - type: text
   name: tag
   label: tag
