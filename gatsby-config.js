@@ -49,6 +49,23 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
+              sizeByPixelDensity: true,
+              showCaptions: false
+            }
+          },
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
