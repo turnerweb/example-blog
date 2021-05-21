@@ -13,5 +13,6 @@ fields:
   name: tag
   label: tag
 pages:
+- src/pois/agueda.md
 - src/pois/arealva.md
 - src/pois/monte-palace.md
