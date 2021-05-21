@@ -29,10 +29,10 @@ export default function Header() {
                     <button className="navigation__close" onClick={handleClick}>
                         <Close className="navigation__x" />
                     </button>
-                    <Link className="navigation__link" to="/">Home</Link>
-                    <Link className="navigation__link" to="/places">Sehenswürdigkeiten</Link>
-                    <Link className="navigation__link" to="/about">Über</Link>
-                    <Link className="navigation__link" to="/posts">Blog</Link>
+                    <Link className="navigation__link" to="/" activeClassName="navigation__link--active">Home</Link>
+                    <Link className="navigation__link" to="/places" activeClassName="navigation__link--active">Sehenswürdigkeiten</Link>
+                    <Link className="navigation__link" to="/about" activeClassName="navigation__link--active">Über</Link>
+                    <Link className="navigation__link" to="/posts" activeClassName="navigation__link--active">Blog</Link>
                 </nav>                
             </div>
         </header>
