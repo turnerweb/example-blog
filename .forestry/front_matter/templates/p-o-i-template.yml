@@ -12,3 +12,5 @@ fields:
 - type: text
   name: tag
   label: tag
+pages:
+- src/pois/arealva.md
