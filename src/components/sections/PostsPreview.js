@@ -26,7 +26,7 @@ export default function PostsPreview() {
                     width: 500
                     placeholder: BLURRED
                     layout: CONSTRAINED
-                    formats: AUTO
+                    formats: [AUTO, WEBP]
                   )
                 }
               }
