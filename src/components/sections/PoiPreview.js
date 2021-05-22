@@ -7,7 +7,7 @@ export default function PoiPreview() {
 
   const data = useStaticQuery(graphql`
     query Points {
-        allFile(filter: {sourceInstanceName: {eq: "pois"}}, limit: 4) {
+        allFile(filter: {sourceInstanceName: {eq: "pois"}}, limit: 3) {
           edges {
             node {
               id
@@ -18,7 +18,7 @@ export default function PoiPreview() {
                   thumb {
                     childImageSharp {
                       gatsbyImageData(
-                          width: 680
+                          width: 600
                           layout: CONSTRAINED
                           formats: [AUTO, WEBP] 
                           placeholder: BLURRED

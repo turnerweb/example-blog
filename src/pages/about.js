@@ -37,7 +37,7 @@ export default function About() {
         <Layout>
             <div className="about">
                 <PageTitle title={about.frontmatter.title} className="about__title" />  
-                <GatsbyImage image={getImage(about.frontmatter.img.childImageSharp.gatsbyImageData)} alt="" className="about__img" />
+                <GatsbyImage image={getImage(about.frontmatter.img.childImageSharp.gatsbyImageData)} alt="" className="about__img" loading="lazy" />
                 <div className="about__textcontainer">
                     <p className="about__intro">{about.frontmatter.intro}</p>
                     <div className="about__paras" dangerouslySetInnerHTML={{ __html: about.html }}></div>

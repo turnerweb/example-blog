@@ -11,7 +11,7 @@ export default function PostPreviewCard(props) {
 
     return (
       <div className={`postpre ${classname}`}>
-        <GatsbyImage image={getImage(frontmatter.thumb.childImageSharp.gatsbyImageData)} className="postpre__img" alt="" loading="eager" />
+        <GatsbyImage image={getImage(frontmatter.thumb.childImageSharp.gatsbyImageData)} className="postpre__img" alt="" loading="lazy" />
         <div className="postpre__content">
           <p className="postpre__tags">{frontmatter.tags}</p>  
           <h2 className="postpre__title">{frontmatter.title}</h2>

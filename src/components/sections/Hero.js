@@ -23,7 +23,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
             <section className="hero">
                 <div className="hero__content">
                     <h1 className="hero__title">Sehenswerte & interessante Orte in Portugal</h1>
-                    <GatsbyImage image={getImage(data.file)} className="hero__img" alt="" loading="eager" />
+                    <GatsbyImage image={getImage(data.file)} className="hero__img" alt="" loading="lazy" />
                     <p className="hero__text">
                         Alle Artikel auf dieser Seite sind Dummytexte. Die Website wurde mit Gatsby entwickelt.
                         Verwaltet wird der Content mit Forestry CMS.

@@ -24,7 +24,7 @@ export default function PageTitle(props) {
     return (
         <div className="pagetitle">
             <h1 className="pagetitle__title">{title}</h1>
-            <GatsbyImage image={getImage(data.file)} className="pagetitle__img" alt="" loading="eager" />            
+            <GatsbyImage image={getImage(data.file)} className="pagetitle__img" alt="" loading="lazy" />            
         </div>
     )
 }

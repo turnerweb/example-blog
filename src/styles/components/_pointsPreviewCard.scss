@@ -1,102 +1,83 @@
-.gatsby-image-wrapper {
-    display: block;
-}
-
 .poicard {
-    &__img {
-        position: relative;
-        overflow: hidden;
-
-        &:hover {
-            & > .poicard__overlay {
-                top: 0;
-            }
-        }
-    }
-
-    &__overlay {
-        @include flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: normal;
-        padding: 1rem;
-        position: absolute;
-        top: 110%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(black, 0.8);
-        transition: top .6s;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px 2px $bg-light;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $white;
+    z-index: 5;
+    
+    &__container {
+        padding: 1.5rem 2rem 2rem 2rem;
+        background-color: $white;
+        z-index: 10;
     }
 
     &__text {
-        max-width: 350px;
 
         h2 {
-            font-family: $roboto;
             font-size: 1.5rem;
-            font-weight: 400;
-            color: $blue;
+            font-family: $roboto;
+            color: $primary;
             text-transform: uppercase;
         }
 
         p {
-            font-size: $font-xs;
             margin-top: 10px;
-            color: $white;
         }
     }
 
     &__footer {
-        @include flex;
-        justify-content: space-between;
-        padding-top: 20px;
-        border-top: 1px solid $blue;
+        margin-top: 20px;
+        border-top: 1px solid $bg-light;
     }
 
     &__share {
         @include flex;
-        align-self: flex-end;
+        margin-top: 20px;
     }
 
     &__icon {
         margin: 0 5px;
         width: 20px;
         align-self: flex-end;
-        fill: $blue;
+        fill: $font-color;
         transition: fill .2s;
 
         &:hover {
             cursor: pointer;
-            fill: $white;
+            fill: $primary;
         }
     }
 
     &__link {
         padding: 0.5rem 2rem;
-        background-color: transparent;
-        border: 2px solid $blue;
-        color: $blue;
+        display: block;
+        background-color: $white;
+        border: 2px solid $primary;
+        color: $primary;
+        text-align: center;
+        text-transform: uppercase;
         transition: all .2s;
 
         &:hover {
-            background-color: $white;
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    @include tablet {
+        width: 49%;
+        &:nth-child(2n + 1) {
+            margin-right: 1%;
         }
     }
 
     @include desktop {
-        &__overlay {
-            padding: 2rem;
-        }
-
-        &__text {
-            h2 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: unset;
-            }
+        width: 32%;
+        &:nth-child(2n + 1) {
+            margin-right: unset;
         }
     }
 }

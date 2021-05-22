@@ -4,14 +4,15 @@
     &__grid {
         margin-top: -30%;
         padding-bottom: 50px;
-        display: grid;
-        grid-template-columns: auto;
-        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    @include tablet {
+    @include desktop {
         &__grid {
-            grid-template-columns: repeat(2, auto);
+            justify-content: space-between;    
         }
+        
     }
 }
