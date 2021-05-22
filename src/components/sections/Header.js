@@ -30,7 +30,7 @@ export default function Header() {
                         <Close className="navigation__x" />
                     </button>
                     <Link className="navigation__link" to="/" activeClassName="navigation__link--active">Home</Link>
-                    <Link className="navigation__link" to="/places" activeClassName="navigation__link--active">Sehenswürdigkeiten</Link>
+                    <Link className="navigation__link" to="/places" activeClassName="navigation__link--active">Sehenswertes</Link>
                     <Link className="navigation__link" to="/about" activeClassName="navigation__link--active">Über</Link>
                     <Link className="navigation__link" to="/posts" activeClassName="navigation__link--active">Blog</Link>
                 </nav>                
