@@ -29,6 +29,10 @@
         
     }
 
+    .gatsby-image-wrapper-constrained {
+        display: block;
+    }
+
     @include tablet {
         &__textcontainer {
             flex-direction: row;

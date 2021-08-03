@@ -4,6 +4,12 @@
         @include content;
     }
 
+    &__img {
+        margin: 0 auto;
+        display: block;
+        max-width: 1200px;
+    }
+
     &__infobar {
         margin: -45px auto 0 auto;
         padding: 0 2rem;
@@ -82,6 +88,10 @@
             margin-left: 15px;
             list-style-type: disc;
         }
+    }
+
+    .gatsby-image-wrapper-constrained {
+        display: block;
     }
 
     @include tablet {
